@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글쓰기</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /*======= 자유게시판 - 글 등록 페이지 =======*/
+        .boardWrite h3{
+            padding-bottom: 150px;
+        } 
+
+        .boardWrite form {
+            text-align: left;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            padding: 0 60px;
+            /* margin-left: 400px; */
+            width: 1000px;
+        }
+
+        .boardWrite .article{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+
+
+            margin-bottom: 100px;
+        }
+
+        /* 등록, 목록 버튼*/
+        .boardWrite .article button{ 
+            display: block;
+            padding: 6px 12px;
+            
+            font-size: 14px;
+            margin: 0 auto;
+        }
+
+        .boardWrite .article .regBtn{
+            float: right;
+            margin-right: 5px;
+        }
+
+        .boardWrite .article .listBtn{
+            float: right;
+            margin-right: 10px;
+        }
+
+        .boardWrite .reply-input .form-control{
+            margin-top: 10px;
+            width: 200px;
+            height: 30px;
+        }
+
+        
+        .boardWrite .form-control{
+            width: 250px;
+            height: 25px;
+        }
+
+
+        .boardWrite .textArea {
+            width: 800px;
+        }
+
+        .boardWrite td.t-title {
+            width: 80px;
+        }
+
+        .boardWrite td{
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+    <section class="boardWrite">
+        <div class="article">
+            
+                
+            <h3>글쓰기</h3>
+                
+            <form>
+                <table>
+                    
+                        <tr>
+                            <td class="t-title">아이디</td>
+                            <td><input class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td class="t-title">제목</td>
+                            <td><input class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td class="t-title">내용</td>
+                            <td>
+                            <textarea class="textArea" rows="7" style="margin-bottom: 10px;"></textarea>
+                            </td>                 
+                        </tr>
+                    
+                </table>
+
+                    
+                <button type="button" class="listBtn">목록</button>
+                <button type="button" class="regBtn">등록</button>
+            </form>
+
+        
+    
+</div>
+
+    </section>
+</body>
+</html>

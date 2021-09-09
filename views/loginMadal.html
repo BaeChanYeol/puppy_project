@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .modal-wrap {
+            /*display: none;*/
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .modal {
+            /*display: none;*/
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -250px 0 0 -250px;
+            background: rgb(255, 254, 254);
+            z-index: 2;
+
+        }
+
+        .modal_close {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .modal h2 {
+            text-align: center;
+            padding: 50px;
+            margin-bottom: 25px;
+            font-size: 26px;
+        }
+
+        .loginform-wrap {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .loginform-wrap input[type="text"],
+        .loginform-wrap input[type="password"] {
+            width: 100%;
+            height: 40px;
+            font-size: 16px;
+            padding-left: 5px;
+
+        }
+
+        .logininput-wrap {
+            margin-bottom: 10px;
+        }
+
+        .login-checkbox {
+            width: 50%;
+            float: left;
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        .logininput-wrap-btn {
+            margin-top: 20px;
+        }
+
+        .logininput-wrap button {
+            width: 100%;
+            height: 40px;
+            font-size: 16px;
+        }
+
+        .login-btn {
+            background-color: #996633;
+            color: white;
+            border: none;
+        }
+
+        .naver-btn {
+            border: none;
+            background-color: rgb(65, 185, 65);
+            color: white;
+        }
+
+        .kakao-btn {
+            border: none;
+            background-color: rgb(252, 248, 52);
+            color: black;
+        }
+
+        .login-modal-bottom {
+            margin-top: 25px;
+        }
+
+        .modal-bottom {
+            width: 33%;
+            float: left;
+        }
+
+        .modal-bottom a {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="modal-wrap">
+        <div class="modal">
+            <div class="modal_close">
+                <a href="#"><img src="./img/close.png" alt="close"></a>
+            </div>
+            <h2>로그인</h2>
+
+            <div class="loginform-wrap">
+                <form action="" method="POST">
+                    <div class="logininput-wrap">
+                        <input type="text" placeholder="아이디를 입력하세요!">
+                    </div>
+                    <div class="logininput-wrap">
+                        <input type="password" placeholder="비밀번호를 입력하세요!">
+                    </div>
+                    <div class="logininput-wrap clearfix">
+                        <div class="login-checkbox">
+                            <input type="checkbox"> 아이디 저장
+                        </div>
+                        <div class="login-checkbox">
+                            <input type="checkbox"> 자동 로그인
+                        </div>
+                    </div>
+                    <div class="logininput-wrap-btn">
+                        <div class="logininput-wrap">
+                            <button class="login-btn" type="submit">로그인</button>
+                        </div>
+                        <div class="logininput-wrap">
+                            <button class="naver-btn" type="submit">네이버 로그인</button>
+                        </div>
+                        <div class="logininput-wrap">
+                            <button class="kakao-btn" type="submit">Kakao 로그인</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="login-modal-bottom clearfix">
+                    <div class="modal-bottom"><a href="#">회원가입</a></div>
+                    <div class="modal-bottom"><a href="#">아이디찾기</a></div>
+                    <div class="modal-bottom"><a href="#">비밀번호찾기</a></div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

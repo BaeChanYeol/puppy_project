@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoardList</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        /*======= 마이페이지 - 내가 쓴 글, 댓글 목록 =======*/
+
+        .myArticle h3{
+            text-align: center;
+            padding-bottom: 60px;
+
+        }
+
+        .myBoast h3{
+            padding-bottom: 50px;
+        }
+
+        .boardList table, .boardList td, .boardList th{
+            border: 1px solid black;
+            border-collapse : collapse;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .boardList th{
+            background-color: lightgray;
+        }
+
+        .boardList td, .boardList th{
+            height: 40px;
+        }
+
+        .boardList table{
+            width: 900px;
+            margin-bottom: 80px;
+        }
+
+        .pagination{
+            text-align: center;
+            padding-bottom: 50px ;
+            margin-bottom: 30px;
+        }
+
+
+        /* .myBoast ul{
+            float:left;
+            width:33%;
+            padding: 10px;
+        } */
+
+        .myBoast a img{
+            width: 300px;
+            height: 300px;
+        }
+
+        .myBoast .boast-like img{
+            margin-right: 50px;
+        }
+
+        .myBoast ul{
+            margin: -50px 0;
+        }
+
+
+        .myBoast .p-title{
+            padding-left: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <section class="boardList">
+        <!-- 내가 쓴 글 영역 -->
+        <div class="myArticle">
+            <h3>내가 쓴 글</h3>
+
+            <table>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성일자</th>
+                <th>좋아요</th>
+                <th>조회수</th>
+                <th>수정</th>
+                <th>삭제</th>
+
+
+                <!-- 더미 데이터 시작 -->
+                <tr>
+                    <td>7</td>
+                    <td>태어난지 100일째 저희집..</td>
+                    <td>21.09.05 09:55</td>
+                    <td>12</td>
+                    <td>27</td>
+                    <td><button>수정</button></td>
+                    <td><button>삭제</button></td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>같이 산책할 여자멍멍이..</td>
+                    <td>21.09.03 20:25</td>
+                    <td>27</td>
+                    <td>53</td>
+                    <td><button>수정</button></td>
+                    <td><button>삭제</button></td>
+                </tr>
+
+                <!-- 더미 데이터 끝 -->
+
+            </table>
+
+        </div>
+
+        <div class="pagination">
+
+            <button type="button" onclick="location.href='#'">이전</button>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <button type="button" onclick="location.href='#'">다음</button>
+            
+        </div>
+
+
+        <div class="myBoast">
+            <!-- 내가 쓴 뽐내기 영역 -->
+            <div id="boast-products">
+                <h3>내가 쓴 뽐내기</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../img/boast1.jpg" alt="리트리버">
+                        </a>
+                        <h4 class="align p-title">태어난지 100일째 <br> 저희 집 리트리버 </h4>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/boast2.jpg" alt="산타개">
+                        </a>
+                        <h4 class="align p-title">산타옷입은 저희강아지<br>시츄산타네요</h4>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/boast3.jpg" alt="아기시바">
+                        </a>
+                        <h4 class="align p-title">블랙탄시바를 입양했어요 <br>이름은 킹콩이에요</h4>
+            
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../img/boast4.jpg" alt="근육">
+                        </a>
+                        <h4 class="align p-title">우리집 강아지 자바인데요<br>헬창이네요</h4>
+            
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/angry.jpg" alt="한복">
+            
+                        </a>
+                        <h4 class="align p-title">우리집 뽀리는<br>화를 내는 모습도 귀요미</h4>
+            
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/boast6.jpg" alt="화장">
+            
+                        </a>
+                        <h4 class="align p-title">얼굴에 연지곤지찍으니 <br>더이쁘고 귀엽네요</h4>
+                        <!-- <div class="boast-like clearfix">
+                            <button class="boast-like-btn"><img src="../img/like1.jpg" alt=""></button>
+                            <button class="boast-comment-btn"><img src="../img/comment1.jpg" alt=""></button>
+                        </div> -->
+            
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pagination">
+
+            <button type="button" onclick="location.href='#'">이전</button>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <button type="button" onclick="location.href='#'">다음</button>
+            
+        </div>
+
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,971 @@
+
+/*======= 웹 폰트 선언 =======*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* 디자인 시작 시 기본적으로 선언하는 문법 */
+* {
+    /* 기본 선언: 마진, 패딩 0, 요소 크기를 border를 기준으로.*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    min-width: 320px;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+img {
+    max-width: 100%; /*사이즈가 변해도 넓이를 유지*/
+    height: auto; /* 사이즈가 변해도 비율을 유지 */
+}
+
+/*
+input, textarea, button, select {
+     고유하게 적용되어있는 form 관련 요소들을 제거해서
+     여러 브라우저에서 동일한 디자인을 얻게 함.
+    -webkit-appearance: none; 크롬, 사파리
+    -moz-appearance: none; 파이어폭스
+    appearance: none; ie, edge
+    border: none;
+}
+*/
+
+
+
+ul, ol, dl, li {
+    /*리스트 스타일은 사용할 일이 많지 않아요.*/
+    list-style: none; 
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 공통 스타일 */
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+section {
+    margin-top: 290px;
+}
+.wrap {
+    width: 1140px;
+    height: auto;
+    margin: 0 auto;
+}
+.main-container{
+    width: 100%;
+    text-align: center;
+}
+
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/*======= 예약안내/이용안내 페이지 =======*/
+.title {
+    padding-top: 30px;
+    line-height: 40px;
+}
+
+.mainBody {
+    text-align: left;
+}
+
+
+.left, .right{
+    width: 49%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+    padding-left: 20px;
+}
+.list-group{
+    border: 1px #996633 solid;
+    font-size: 14px;
+}
+.list-group-item{
+    border-bottom: 1px #996633 solid;
+    padding: 1em;
+    line-height: 20px;
+}
+.list-group-item:last-child{
+    border-bottom: none;
+}
+
+.list-group-item img {
+    width: 24px;
+    padding-right: 5px;
+}
+.list-group-item .pick-margin{
+    margin: 10px 5px;
+}
+.info{
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+.noti-info{
+    margin: 29px 0;
+}
+
+.reserve_form input, .reserve_form select, .reserve_form textarea{
+    width: 100%;
+    
+    padding-left: 5px; 
+}
+.reserve_form input, .reserve_form select{
+    height: 30px;
+ 
+}
+.reserve_form textarea{
+    height: 170px;
+}
+
+.reserve_btn{
+    width: 100%;
+    background-color: #996633;
+    border: 0px;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: bold;
+    color:#fff;    
+}
+.reserve_input{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.img_block{
+    float: left;
+    margin-right: 20px;
+}        
+.img_block img {
+    width: 65px;
+}
+.info_block{
+    float: left;
+    margin-left: 10px;
+    width: 75%;
+}
+.notice-text {
+    line-height: 35px;
+    float: left;
+    text-align: left;
+}
+.title>h2 {
+            
+    margin: 0 auto;
+    font-size: 2.0rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+.info_block>h3 {
+   
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.f-left{
+    float: left;
+}
+
+.list-group {
+    border: 1px #996633 solid;
+    text-align: left;
+}
+
+
+.list-group-item:last-child {
+    border-bottom: 0px;
+    padding: 1em;
+}
+
+
+/*================ 픽업서비스 ==================*/
+
+.pick-title {
+    width: 80%;
+    height: 150px;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.mainBody {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.list-group-item {
+    border-bottom: 1px #996633 solid;
+    padding: 1em;       
+}
+
+
+
+.pick-title h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.info_block h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+
+.all {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* .pick-img {
+    padding-top: 3.5em;
+} */
+
+
+.reservation {
+    padding-left: 5px;
+}
+
+
+/*======= 서비스 - 그루밍 페이지, 메디컬센터,스튜디오 =======*/
+
+.service-container {
+    margin-top: 2em;
+    display: inline-block;
+}
+
+.service-container h3 {
+    margin-bottom: 50px;
+    margin-top: 5em;  /*고품격이랑 제목사진 사이 간격*/
+}
+
+.main_txt {
+    margin-top: 75px;
+}
+
+.main_txt> p {
+    margin-top: 25px;
+}
+
+.service-list{
+    line-height: 1.5em;
+    float:left;
+    width:33%;
+    padding: 10px;
+}
+
+.g-wrap{
+    margin-top: 100px;  
+}
+
+.g-wrap h4{
+    font-weight: bold;
+}
+.service-list{
+    float:left;
+    width:33%;
+    padding: 10px;
+}
+
+.studio-list {
+    float:left;
+    width:49%;
+    padding: 10px;
+}
+
+
+.portfolio{
+    margin-top: 200px;
+    
+}
+.portfolio h3 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.img_list img{
+    padding-bottom: 10px;
+    padding: 2.5px;
+    width: 370px;
+    height: 500px;
+}
+
+/*===========서비스 - 호텔 페이지===============*/
+
+.hena {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.hena h3 {
+    font-size: 30px;
+    padding: 30px 0 20px;
+    
+}
+.hena p {
+    font-size: 20px;
+}
+.hena img {
+    width: 100%;
+    
+}
+.intro{
+    height: 1100px;
+}
+.intro h4 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.intro p {
+    font-size: 15px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.hotel-left {
+    float: left;
+    height: 500px;
+    width: 49%;
+    margin: 20px auto;
+}
+
+.hotel-right {
+    float: right;
+    height: 500px;
+    width: 45%;
+    margin: 20px auto;
+}
+
+.hotel-room {
+    margin-top: 50px;
+}
+
+.hotel-room h2 {
+    font-size: 30px;
+    margin: 100px;
+}
+
+
+.hotel-txt{
+    margin: 40px;
+}
+.hotel-txt h4 {
+    font-size: 30px;
+    padding-bottom: 30px;
+}   
+.hotel-txt p {
+    font-size: 15px;
+    line-height: 25px;
+}   
+
+
+/*==============서비스 - 유치원==============*/
+
+
+
+.educationSystem {
+    padding-top: 2em;
+    margin-top: 15em; /*표랑 고품격 사이의 간격*/
+}
+
+.educationSystem h3 {
+    margin-bottom: 20px;
+}
+
+.edulist {
+    width: 100%;  /*표 오른쪽 너비*/
+    background-color: blanchedalmond;
+    text-align: center;
+    
+}
+
+.edulist tr td {
+    padding: 30px;
+}
+
+.in {
+    margin-top: 10em;  /*표랑 국내최고의 시설 사이 간격*/
+}
+.in div {
+    margin: 20px auto;
+}
+.in div img {
+    margin-bottom: 20px;
+}
+
+.pres-price {
+    margin-top: 5em;  /*이용가격이랑 국내최고의시설 사이 간격*/
+}
+
+.monthPrice {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.monthPrice tr td {
+    padding: 30px;
+    background-color: blanchedalmond;
+}
+
+
+/*======= 전문진 소개 페이지 =======*/
+.comment{
+    padding-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 130px;
+    color: #996633;
+}
+
+.person {
+    margin: 80px auto ;
+}
+
+.person img{
+    float: left;
+    width: 45%;
+    height: auto;
+    padding-right: 50px;
+
+}
+
+.person h3{
+    font-weight: bold;
+    width: 180px;
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 28px;
+    border-left: #996633 3px solid;
+    padding-left: 10px;
+}
+.person ul {
+    padding-bottom: 20px;
+    margin-left: 20px;
+    float: right;
+    width: 50%;
+    border-top: 1px #996633 solid;
+}
+.person ul li {
+    text-align: left;
+    height: 50px;
+    border: 1px #996633 solid;
+    border-top: none;
+    padding: 15px 20px;
+
+};
+
+
+/*================사이트 맵====================*/
+.sitemap-title {
+    padding-top: 30px;
+}
+
+.sitemap-title h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sitemap-map-group {
+    margin-top: 100px;
+    float: left;
+    width: 16.6%;
+    height: 500px;
+}
+
+.sitemap-map-group-item {
+    margin: 5px 20px;
+    padding-top: 15px;
+    text-align: left;
+    border-top: 10px #996633 solid;
+    color: #996633;
+    font-weight: bolder;
+}
+
+.sitemap-map-group-item h4 {
+    font-size: 1.2rem;
+}
+
+.sitemap-map-block {
+    border-top: none;
+    margin: 5px 20px;
+    padding-top: 30px;
+    height: 300px;
+    line-height: 3em;
+    text-align: left;
+}
+.sitemap-map-block li a {
+    color: #000;
+}
+.sitemap-map-block li a:hover {
+    color: #996633;
+}
+
+
+/*======= QnA 페이지 =======*/
+
+
+.FAQ h3{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+
+.FAQ{
+    text-align: left;
+    height: 100%;
+}
+
+.FAQ .list ul {
+    padding-left: 20px;
+}
+
+.FAQ .question{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.FAQ .answer {
+    display: none;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.personal{
+   
+    margin: auto;
+    padding-top: 50px;
+    height: 200px;
+    text-align: left;
+
+}
+
+
+.personal h3{
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+.personal p {
+    font-size: 17px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+
+ #counsel{
+    padding: 5px;
+    /* margin-left: 45%; */
+    /* position: absolute;
+    right: 780px;
+    bottom: 450px; */
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+    /* position: relative;
+    margin-left: 600px; */
+
+}
+
+
+/*======= 공동구매 - 강아지용품 =======*/
+
+.item{
+    float:left;
+    width: 25%;
+    padding: 5px;
+    
+}
+
+.item-list .title{
+    font-size: 22px;
+}
+
+.item-row{
+    margin: 0 auto;
+    width: 1000px;
+    height: 300px;
+}
+
+.item img{ 
+    width: 200px;
+    height: 200px;
+    padding-bottom: 15px;
+}
+
+.search{
+    float: right;
+    padding-right: 27%;
+    padding-bottom: 30px;
+
+}
+
+
+/*==================== 뽐내기게시판 =======================*/
+
+
+
+#boast-products {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 80px;
+}
+#boast-products h2 {
+    padding: 50px;
+    font-size: 35px;
+    color: #996633;
+}
+
+#boast-products li {
+    display: inline-block;
+    width: 350px;
+    height: 400px;
+    margin: 30px 10px;
+    position: relative;
+}
+#boast-products li .hover{
+    display: none;
+    position: absolute;
+    top:0px;
+    left: 25px;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(153, 102, 51, 0.6);
+}
+#boast-products li .hover img{
+    width: 22px; 
+}
+#boast-products li .hover span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff; 
+}
+#boast-products li .hover .span-left{
+    position: absolute;
+    top:48%;
+    left:40%;
+}
+#boast-products li .hover .span-right{
+    position: absolute;
+    top:48%;
+    left:65%;
+}
+
+#boast-products li .hover .hover-left{
+    position: absolute;
+    top:48%;
+    left:30%;
+}
+#boast-products li .hover .hover-right{
+    position: absolute;
+    top:48%;
+    left:55%;
+}
+
+#boast-products li a {
+    color: #000;
+}
+#boast-products li a:hover {
+    color: #996633;
+}
+#boast-products li .boastimg {
+    height: 300px;
+    width: 300px;
+    aspect-ratio: auto 1 / 1;
+}
+#boast-products li .align {
+    text-align: left;
+    margin: 0 auto;
+}
+
+#boast-products li .p-title {
+    padding-top: 10px;
+    font-size: 18px;
+    width: 300px;
+    height: 50px;
+    
+}
+#boast-products li .p-price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #636363;
+    width: 300px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+#boast-products li .like {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+
+#boast-products li .num {
+    padding-left: 5px;
+    
+}
+.boast-paging {
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+.boast-page {
+    display: inline;
+}
+.boast-write-btn{
+    width: 120px;
+    height: 30px;
+    float: right;
+    margin-right: 45px;
+    margin-bottom: 20px;
+}
+
+.boast-comment-btn{
+    width: 30px;
+    height:30px;
+   
+    float: right;
+    border: white;
+    margin-right: 5px;
+}
+
+.boast-like-btn{
+    width: 35px;
+    height: 30px;
+   
+    float: right;
+    border: white;
+
+}
+
+
+/*=========== 자유게시판 ==============*/
+
+.freeboard-title {
+    font-size: 22px;
+}
+
+.freeboard-sort {
+    text-align: right;
+    margin: 100px auto 0;
+}
+
+.freeboard-list {
+    margin: 20px auto 0;
+}
+
+.freeboard-table {
+    width: 100%;
+    
+}
+.freeboard-table td, .freeboard-table th{
+    padding: 20px;
+}
+
+.freeboard-paging {
+    margin: 0 auto;
+
+}
+
+.freeboard-page {
+    display: inline;
+}
+
+.freeboard-write-btn{
+    margin: 20px;
+    float: right;
+}
+.freeboard-search{
+    margin-top: 50px;
+}
+.freeboard-search select{
+    height: 25px;
+}
+.freeboard-search input{
+    width: 300px;
+    height: 25px;
+    margin: auto 20px;
+}
+.freeboard-write-btn{
+    padding: 7px;
+}
+.freeboard-btn{
+    padding: 5px;
+}
+
+
+
+/*=======================마이페이지===========================*/
+
+.mypage-wrap {
+    border-bottom: 1px gray solid;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.mypage-wrap1 {
+    border-bottom: 1px gray solid;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.mypage-title {
+    margin-bottom: 100px;
+}
+
+.mypage-title h2 {
+    text-align: center;
+    font-size: 28px;
+
+}
+
+.mypage-profile {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.mypage-profile img {
+    width: 50px;
+}
+
+.mypage-bucket {
+    float: right;
+    width: 50px;
+    margin-right: 50px;
+}
+
+.mypage-menu {
+    width: 25%;
+    float: left;
+    padding: 50px;
+}
+
+.mypage-menu img {
+    width: 70px;
+}
+  /*======= 마이페이지 - 내가 쓴 글, 댓글 목록 =======*/
+
+  .myArticle h3, .myComment h3{
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+ 
+.myArticle table, .myArticle td, .myArticle th{
+    border: 1px solid black;
+    border-collapse : collapse;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.myArticle th{
+    background-color: lightgray;
+}
+
+.myArticle td,.myArticle th{
+    height: 40px;
+}
+
+.myArticle table{
+    width: 700px;
+    margin-bottom: 30px;
+} 
+
+.pagination{
+    text-align: center;
+    padding-bottom: 50px ;
+    margin-bottom: 30px;
+}
+
+/*======= 마이페이지 - 예약 내역 =======*/
+
+.myReserve h3{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.myReserve tr button {
+    width: 50px;
+}
+
+.myReserve p{
+    width: 350px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: lightgray;
+    margin: 0 auto;
+    
+}
+
+.myReserve table{
+    margin-top: 20px;
+}
+
+/*======= 마이페이지 - 찜한 상품 =======*/
+
+.myZzim h3{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.myZzim #left img{
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 150px;
+    height: 150px;
+}
+
+.myZzim #delBtn {
+    width: 30px;
+    height: 30px;
+}
+
+.myZzim td, .myZzim th{
+    border-left: none;
+    border-right: none;
+}
+
+.myZzim table{
+    width: 800px;
+
+}
+.myZzim p{
+    text-align: left;
+    
+}
+.myZzim span{
+    padding-bottom: 20px;
+    line-height:24px;
+}
+
+.myZzim #left{
+    width: 30%;
+}
+.myZzim #right{
+    padding-left: 20px;
+}

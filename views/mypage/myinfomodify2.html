@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .myInfoModify{
+            text-align:center;
+        }
+        .myInfoModify2-modify{
+            margin-top: 3em;
+            line-height: 2em;
+        }
+        .myInfoModify2-modify table, 
+        .myInfoModify2-modify tr, 
+        .myInfoModify2-modify td{ 
+            border: none;
+            text-align: left;
+            height: 3em;
+            width: 50em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .myInfoModify2-blank{
+            width: 30em;
+        }
+        .myInfoModify2-button {
+            margin-top: 7em;
+            margin-bottom: 5em;
+        }
+        .myInfoModify2-memberOut,
+        .myInfoModify2-modifyfinish,
+        .myInfoModify2-cancel{
+            padding: 1em;
+            width: 20em;
+        }
+        .myInfoModify2-modifyfinish{
+            background-color: gray; /*변경완료만 좀 진한 색 들어가면 좋을거같아요*/
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 비밀번호로 본인인증하고 내 정보를 수정하는 페이지 -->
+    <section>
+        <article class="myInfoModify">
+            <h2>내 정보 수정</h2>
+            <div class="myInfoModify2-modify">
+                <table class="myInfoModify2-table">
+                    <tr>
+                    <td>이름</td>
+                    <td><input class="myInfoModify2-blank" type="text"></td>
+                </tr>
+                    <tr>
+                    <td>아이디</td>
+                    <td><input class="myInfoModify2-blank" type="text" readonly style="background-color: silver;"></td>
+                    </tr>
+                    <tr>
+                    <td>비밀번호변경</td>
+                    <td><input class="myInfoModify2-blank" type="text" placeholder="비밀번호 (영 대/소문자, 숫자조합 8~16자)"></td>
+                    </tr>
+                    <tr>
+                    <td>비밀번호확인</td>
+                    <td><input class="myInfoModify2-blank" type="text" placeholder="비밀번호를 확인해 주세요."><span id="msgpw"></span> <!-- 비밀번호 유효성 메세지 공간--></td>
+                    </tr>
+                    <tr>
+                    <td>이메일</td>
+                    <td><input class="myInfoModify2-blank" type="text"></td>
+                    </tr>
+                    <tr>
+                    <td>휴대전화</td>
+                    <td>
+                        <select name="myInfoModify2-phone" id="myInfoModify2-phone1" required>
+                            <option value="">선택</option>
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="018">018</option>
+                            <option value="019">019</option>
+                        </select>
+                        - <input type="text">
+                        - <input type="text">
+                     <div class="myInfoModify2-phone-input-group-addon">
+                        <button class="myInfoModify2-phone-btn-primary">본인인증</button>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>주소</td>
+                        <td><input class="myInfoModify2-blank" type="text" id="addr-basic" placeholder="기본주소">
+                            <div class="input-group-addon">
+                                <button class="btn btn-primary">우편번호검색</button>
+                            </div>
+                            <input class="myInfoModify2-blank" type="text" id="addr-detail" placeholder="상세주소">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="myInfoModify2-button">
+                <button class="myInfoModify2-memberOut">회원탈퇴</button>
+                <button class="myInfoModify2-modifyfinish">변경완료</button>
+                <button class="myInfoModify2-cancel">취소</button>
+            </div>
+        </article>
+    </section>
+</body>
+</html>

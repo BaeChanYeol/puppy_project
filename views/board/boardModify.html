@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수정하기</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+
+        /*======= 자유게시판 - 글 수정 페이지 =======*/
+        .boardModify h3{
+            padding-bottom: 140px;
+        }
+
+        .boardModify form {
+            text-align: left;
+            margin: 0 auto;
+            /* margin-left: 400px; */
+            padding: 0 60px;
+            width: 1000px;
+            margin-bottom: 30px;
+        }
+
+        .boardModify .article{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+
+
+            /* margin-bottom: 100px; */
+        }
+
+        .boardModify .article button{ /* 변경, 목록 버튼*/
+            display: block;
+            
+            /* margin-left: 50%; */
+            
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            margin: 0 auto;
+        }
+
+        .boardModify .article .modBtn{
+            float: right;
+            margin-right: 5px;
+        }
+
+        .boardModify .article .delBtn{
+
+            float: right;
+            margin-right: 5px;
+        }
+        .boardModify .article .listBtn{
+            float: right;
+            margin-right: 14px;
+        }
+
+        .boardModify .reply-input .form-control{
+            margin-top: 10px;
+            width: 200px;
+            height: 30px;
+        }
+
+        
+        .boardModify .form-control{
+            
+            /* background-color: rgb(223, 223, 223); */
+            width: 800px;
+            height: 25px;
+        }
+
+        .boardModify .textArea{
+            width: 800px;
+
+        } 
+        .boardModify .form-group{
+            margin-bottom: 15px;
+        }
+        .boardModify .form-group label{
+            margin-right: 15px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <section class="boardModify">
+        <div class="article">
+            
+                
+            <h3>수정하기</h3>
+                
+            <form>
+                    <div class="form-group">
+                        <label>작성일</label>
+                        <input class="form-control" readonly>
+                    </div>   
+                    <div class="form-group">
+                        <label>번호&nbsp;&nbsp;&nbsp;</label>
+                        <input class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>작성자</label>
+                        <input class="form-control" readonly>
+                    </div>    
+                    <div class="form-group">
+                        <label>제목&nbsp;&nbsp;&nbsp;</label>
+                        <input class="form-control" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label style="float: left;">내용&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <textarea class="textArea" rows="10" readonly></textarea>
+                    </div>
+
+                    
+                    <button type="button" class="listBtn">목록</button>
+                    <button type="button" class="delBtn">삭제</button>
+                    <button type="button" class="modBtn">변경</button>
+            </form>
+
+        
+    
+</div>
+
+    </section>
+
+</body>
+</html>
