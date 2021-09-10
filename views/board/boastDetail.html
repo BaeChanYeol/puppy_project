@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boastdetail</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+       .modal-wrap {
+            /*display: none;*/
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .modal {
+            /*display: none;*/
+            width: 1000px;
+            height: 600px;
+            position: absolute;
+            top: 45%;
+            left: 40%;
+            margin: -250px 0 0 -250px;
+            background: #fff;
+            z-index: 2;
+        }
+
+        .modal_close {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .boast-pic {
+            width: 600px;
+            height: 100%;
+        }
+        .boast-pic img {
+            width: 600px;
+            height: 600px;
+        }
+        .boast-content {
+            width: 390px;
+            height: 600px;
+            position: absolute;
+            top: 0;
+            right:0;
+            padding: 10px 0;
+            margin-left: 10px ;
+            border-left: solid 1px #ccc;
+        }
+
+        .boast-content .boast-writer {
+            width: 385px;
+            padding: 5px 10px 10px;
+            border-bottom: solid 1px #ccc;
+            font-weight: bold;
+        }
+
+        .boast-text {
+            font-size: 12px;
+        }
+        .boast-text textarea {
+            margin-top: 10px;
+            width: 385px;
+            border: none;
+            border-bottom: solid 1px #ccc;
+            padding: 5px 10px;
+        }
+        
+        .boast-content .likearea {
+            width: 385px;
+            border-bottom: solid 1px #ccc;
+            height: 70px;
+            position: relative;
+        }
+        
+        .boast-content .likearea img {
+            width: 30px;
+            margin: 10px 10px 0;
+        }
+        .boast-content .likearea P {
+            margin-left: 10px;
+        }
+        .boast-content .likearea .bright {
+            position: absolute;
+            top:10px;
+            right:10px;
+        }
+        .boast-comment {
+            padding-top: 30px;
+            width: 385px;
+            height: 240px;
+            border-bottom: solid 1px #ccc;
+        }
+        .boasr-commentadd button{ 
+            display: inline-block;
+            padding: 6px 15px;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 3px;
+            background: #996633;
+            outline: 0;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="modal-wrap">
+        <div class="modal">
+            <div class="modal_close">
+                <a href="#"><img src="../img/close.png" alt="close"></a>
+            </div>
+
+            <!--사진칸 왼쪽-->
+            <div class="boast-pic">
+                    <img src="../img/boast1.jpg" alt="boast">
+            </div>
+            <!-- 내용 및 댓글-->
+            <div class="boast-content">
+                <div class="boast-writer">
+                    <p>태어난지 100일째 저희 집 리트리버</p>
+                </div>
+                <div class="boast-text">
+                    <textarea rows="10" readonly>우리 콩이 너무 너무 이쁘죠?</textarea>
+                </div>
+                <div class="likearea">
+
+                        <img src="../img/heart2.png" alt="">
+
+                    <p>좋아요 <span>5</span>개</p>
+                    <p class="bright">콩이아빠</p>
+                    
+                </div>
+            <!--댓글창-->
+                
+                <div class="boast-comment">
+                   <div>동이아빠</div>
+                   <div>너무 귀여워요~</div>
+
+                </div>
+                <!--댓글달기-->
+                <!--댓글달기-->
+                <div class="boasr-commentadd">
+                    <div class="boasr-content4-1 boasr-content4-2" >
+                        <input type="text" name="ssn[]" size="14" class="input01" maxlength=20>
+                    </div>
+                    <div class="boasr-content4-1 boasr-content4-3">
+                        <button>게시</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>
