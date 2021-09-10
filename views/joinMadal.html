@@ -24,9 +24,9 @@
         .modal {
             /*display: none;*/
             width: 500px;
-            height: 600px;
+            height: 800px;
             position: absolute;
-            top: 50%;
+            top: 30%;
             left: 50%;
             margin: -250px 0 0 -250px;
             background: rgb(255, 254, 254);
@@ -113,16 +113,44 @@
             border: none;
             color: white;
         }
-        .joinform-phone #phone_check{
+
+        .joinform-phone #phone_check {
             display: inline-block;
             margin-top: 8px;
             width: 75%;
         }
-        .joinform-phone button[class="check"]{
+
+        .joinform-phone button[class="check"] {
             margin-top: 8px;
         }
 
 
+        .joinform #addNum {
+            width: 50%;
+        }
+
+        .joinform-address button {
+            width: 25%;
+            height: 25px;
+            background: #996633;
+            border: none;
+            color: white;
+            padding-bottom: 2px;
+            
+        }
+        .joinform input[id="address"]{
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .joinBtn{
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+            background: #996633;
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
     </style>
 
 </head>
@@ -178,11 +206,11 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <h5><label for="">이메일</label></h5>
                     <input type="text" name="email" id="" placeholder="이메일을 입력해주세요~">
                     <span></span>
-        
+
                     <h5><label for="phone">휴대전화</label></h5>
                     <div class="joinform-phone clearfix">
                         <input type="text" name="phone" id="phone" placeholder="- 제외하고 입력해주세요!">
@@ -190,6 +218,21 @@
                         <input type="text" name="phone_check" id="phone_check" placeholder="인증번호를 입력해주세요!">
                         <button class="check">인증번호확인</button>
                     </div>
+
+                    <h5><label for="address">주소</label></h5>
+                    <div class="joinform-address">
+                        <input type="text" name="addNum" id="addNum" placeholder="우편번호 찾기">
+                        <button>우편번호찾기</button>
+                        <div>
+                            <input type="text" name="address1" id="address" placeholder="기본 주소" readonly>
+                            <input type="text" name="address2" placeholder="상세 주소">
+                        </div>
+                    </div>
+
+                    
+                    
+                    <button type="submit" class="joinBtn">가 입 하 기</button>
+                    
 
                 </form>
             </div>

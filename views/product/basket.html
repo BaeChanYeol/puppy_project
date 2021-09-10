@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basket</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .basket-wrap {
+            width: 80%;
+            margin: 0 auto;
+            border-bottom: 1px gray solid;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .basket-title {
+            text-align: center;
+            display: inline-block;
+            font-size: 23px;
+            position: relative;
+        }
+
+        .basket-title img {
+            width: 55px;
+            position: absolute;
+            bottom: -10px;
+            right: -60px;
+            z-index: -1;
+        }
+
+        .basket-wrap1 {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .basket-table {          
+            width: 100%;
+        }
+
+        .basket-table .first {
+            text-align: center;
+            width: 2%;
+        }
+        .basket-table img{
+            height: 120px;
+            float: left;
+            margin-left: 10px;
+        }
+        .basket-table p{
+            float: left;
+            margin-top: 30px;
+            margin-left: 40px;
+ 
+        }
+     
+        
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <!-- 장바구니헤더 및 이미지-->
+        <article class="basket-wrap">
+
+            <div class="basket-title">
+                <h2>장바구니 <img src="../img/mp1.jpg" alt=""></h2>
+
+            </div>
+
+
+        </article>
+
+        <article class="basket-wrap1">
+
+            <div class="basket-ct">
+                <table class="basket-table">
+                    <tr>
+                        <th class="first"><input type="checkbox"></th>
+                        <th>상품 정보</th>
+                        <th>수량</th>
+                        <th>상품삭제</th>
+                    </tr>
+
+                    <tr>
+                        <td class="first"><input type="checkbox"></td>
+                        <td class="second clearfix">
+                            <img src="../img/basket1.jpg" alt="basketItem4">
+                            <!--상품정보-->
+                            <p>
+                                <span>
+                                    순면 배변패드 <br>옵션: 중형견용<br>판매가: 20,700원
+                                </span>
+                            </p>
+
+                        </td>
+                        <td>
+
+                            <button style="padding:3px 5px;">-</button>
+                            <span>&nbsp;2&nbsp;</span>
+                            <button style="padding:3px 5px;">+</button>
+
+
+                        </td>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;
+                            <button class="basket-button">상품삭제</button>
+                            &nbsp;
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </article>
+
+        <article class="basket-wrap2">
+
+            <div class="basket-title1">
+                <h2>상품금액 <br>358,300원</h2>
+                <img src="../img/plus1.png" alt="">
+                <h2>배달비 <br>3000원</h2> &nbsp;
+                <img src="../img/sum1.png" alt="">&nbsp;
+                <h2>총상품금액 <br>358,300원</h2>
+            </div>
+
+
+        </article>
+
+        <div class="basket-button">
+            <br><br>
+            <button>주문하기</button>
+            <button>쇼핑계속하기</button>
+        </div>
+    </section>
+</body>
+
+</html>

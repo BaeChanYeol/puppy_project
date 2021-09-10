@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>zzim</title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .zzimList{
@@ -35,8 +35,33 @@
             height: 30px;
         }
 
-        .myZzim td,
-        .myZzim th {
+        .myZzim table, .myZzim td, .myZzim th{
+            border: 1px solid black;
+            border-collapse : collapse;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .myZzim th{
+            background-color: lightgray;
+        }
+
+        .myZzim td, .myZzim th{
+            height: 40px;
+        }
+
+        .myZzim table{
+            width: 700px;
+            margin-bottom: 30px;
+        }
+
+        .pagination{
+            text-align: center;
+            padding-bottom: 50px ;
+            margin-bottom: 30px;
+        }
+
+        .myZzim td, .myZzim th {
             border-left: none;
             border-right: none;
         }

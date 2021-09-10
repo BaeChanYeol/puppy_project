@@ -1,19 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myBoard</title>
     <link rel="stylesheet" href="../css/style.css">
-    <title>boastboard</title>
-</head>
+    <style>
+        /*============ 마이페이지- 내가 쓴 글, 내가 쓴 뽐내기 ==============*/
+        .myBoast #boast-products {
+            text-align: center;
+            /* margin-top: 100px; */
+            padding-bottom: 80px;
+        }
+        .myBoast #boast-products h2 {
+            padding-bottom: 70px;
+            font-size: 35px;
+            color: #996633;
+        }
 
+        .myBoast #boast-products li {
+            display: inline-block;
+            width: 300px;
+            height: 350px;
+            margin: 20px 10px;
+            position: relative;
+        }
+        .myBoast #boast-products li .hover{
+            display: none;
+            position: absolute;
+            top:0px;
+            left: 25px;
+            height: 250px;
+            width: 250px;
+            background-color: rgba(153, 102, 51, 0.6);
+        }
+        
+        .myBoast #boast-products li .boastimg {
+            height: 250px;
+            width: 250px;
+            aspect-ratio: auto 1 / 1;
+        }
+
+        .myBoast #boast-products li .p-title {
+            padding-top: 10px;
+            font-size: 18px;
+            width: 250px;
+            height: 50px;
+            
+        }
+        .myBoast #boast-products li .p-price {
+            font-size: 15px;
+            font-weight: bold;
+            color: #636363;
+            width: 250px;
+            height: 20px;
+            margin-top: 5px;
+        }
+
+        .myBoast .boast-paging {
+            padding-top: 60px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+
+        
+
+        /*============내가 쓴 글 영역===============*/
+
+        .myArticle{
+            margin: 0 auto;
+            width: 1100px;
+        }
+
+        .myArticle button {
+            padding: 3px;
+        }
+        .myBoard h2{
+            text-align: center;
+            font-size: 35px;
+            color: #996633;
+            padding-bottom: 70px;
+        }
+
+        .myBoard table, .myBoard td, .myBoard th{
+            border: 1px solid black;
+            border-collapse : collapse;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .myBoard th{
+            background-color: #ffc17e;
+        }
+
+        .myBoard td, .myBoard th{
+            height: 40px;
+        }
+
+        .myBoard table{
+            /* text-align: center; */
+            width: 900px;
+            margin-bottom: 80px;
+        }
+        
+
+        .myBoard .pagination{
+            text-align: center;
+            /* padding-bottom: 50px ; */
+            /* margin-bottom: 30px; */
+        }
+
+
+
+    </style>
+
+</head>
 <body>
-    <section>
+    
+    <!-- 내가 쓴 글 영역 -->
+    <section class="myBoard">
+        
+        <div class="myArticle">
+            <h2>내가 쓴 글</h2>
+
+            <table>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성일자</th>
+                <th>좋아요</th>
+                <th>조회수</th>
+                <th>수정</th>
+                <th>삭제</th>
+
+
+                <!-- 더미 데이터 시작 -->
+                <tr>
+                    <td>7</td>
+                    <td>태어난지 100일째 저희집..</td>
+                    <td>2021.09.05 09:55</td>
+                    <td>12</td>
+                    <td>27</td>
+                    <td><button>수정</button></td>
+                    <td><button>삭제</button></td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>같이 산책할 여자멍멍이..</td>
+                    <td>2021.09.03 20:25</td>
+                    <td>27</td>
+                    <td>53</td>
+                    <td><button>수정</button></td>
+                    <td><button>삭제</button></td>
+                </tr>
+
+                <!-- 더미 데이터 끝 -->
+
+            </table>
+
+        </div>
+
+        <div class="pagination">
+
+            <button type="button" onclick="location.href='#'">이전</button>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <button type="button" onclick="location.href='#'">다음</button>
+            
+        </div>
+    </section>
+
+
+    <!-- 내가 쓴 뽐내기 영역 -->
+    <section class="myBoast" style="margin-top: 0; ">
         <article class="main-container">
             <div id="boast-products" class="wrap">
-                <h2>뽐내기 게시판</h2>
+                <h2>내가 쓴 뽐내기</h2>
                 <ul class="boasthover">
                     <li>
                         <img class="boastimg" src="../img/boast1.jpg" alt="리트리버">
@@ -119,15 +286,12 @@
                     </li>
                 </ul>
 
-                <div class="wrap clearfix">
-                    <button class="boast-write-btn">글쓰기</button>
-                </div>
 
 
                 <!-- 페이징 공간-->
                 <div class="boast-paging">
 
-                    <button> 이전 버튼 </button>
+                    <button> 이전</button>
                     <a href="#">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
@@ -138,7 +302,7 @@
                     <a href="#">8</a>
                     <a href="#">9</a>
                     <a href="#">10</a>
-                    <button> 다음 버튼 </button>
+                    <button> 다음</button>
 
                 </div>
             </div>
@@ -203,5 +367,4 @@
 
 
 </body>
-
 </html>

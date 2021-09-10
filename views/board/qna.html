@@ -8,50 +8,139 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js"></script>
-    
-    
+
+    <style>
+        /*======= QnA 페이지 =======*/
+
+
+        .QNA h2{
+            text-align: center;
+            font-size: 38px;
+            margin-bottom: 100px;
+        }
+
+        .FAQ h3, .personal h3{
+            padding-top: 20px;
+            padding-bottom: 40px;
+            font-size: 25px;
+        }
+
+        .FAQ{
+            text-align: left;
+            width: 763px;
+        }
+
+        .qnaBoard .QNA {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 130vh;
+            flex-direction: column;
+            margin-bottom: 70px;
+        }
+
+        .FAQ .question{
+            font-size: 18px;
+            padding-bottom: 15px;
+        }
+
+        .FAQ .answer {
+            display: none;
+            font-size: 18px;
+            padding-bottom: 15px;
+        }
+
+        .personal{
+            clear: both;
+            padding-top: 50px;
+            height: 200px;
+            text-align: left;
+        }
+
+
+        .personal p {
+            font-size: 17px;
+            padding-bottom: 10px;
+        }
+
+        .personal-txt .personal-area, .personal-txt #qnaTitle {
+            display: flex;
+            flex-direction: row;
+            width: 763px;
+            padding: 10px;
+        }
+
+
+
+        #counsel{
+            padding: 5px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        
+    </style>
+
+
 </head>
 <body>
     <section class="qnaBoard">
-        <article class = "main-container">
+        <article class = "QNA">
+            
             <h2>Q&A</h2>
-        </article>
-        <article class = "main-container">
-            <!--자주하는 질문-->
-            <div class="wrap">
-                <div class="FAQ">
-                    <h3>자주묻는 질문</h3>
-                    <div class="list">
 
-                        <ul>
-                            <li class="question">Q. 다툼이 일어나면 어떻게 하나요?</li>
-                            <li class="answer">A. 분리된 공간에 둡니다.</li>
-                        
-                            <li class="question">Q. 다툼이 일어나면 어떻게 하나요?</li>
-                            <li class="answer">A. 분리된 공간에 둡니다.</li>
-                        
-                            <li class="question">Q. 다툼이 일어나면 어떻게 하나요?</li>
-                            <li class="answer">A. 분리된 공간에 둡니다.</li>
-                        </ul>
-                    </div>
-                </div>    
-            </div>
-        </article>
-        <article class = "main-container">
-            <div class="wrap">
-                <!--1대1 문의-->
-                <div class="personal">
-                    <h3>1대1 문의</h3>
-                    <p>
-                    온라인 상담에 대한 답변은 보통 1-2일 정도 시간이 소요되며,
-                    유치원 일정에 따라 조금 늦어질 수 있습니다.
-                    </p>
-                    <p>
-                    최대한 빠른 시일 내에 정성껏 답변 드리도록 노력하겠습니다. 
-                    </p>   
+            <!--자주하는 질문-->
+            <div class="FAQ">
+                <h3>자주하는 질문</h3>
+                <div class="list">
+
+                    <ul>
+                        <li class="question">Q. 다툼이 일어나면 어떻게 하나요?</li>
+                        <li class="answer">A. 분리된 공간에 둡니다.</li>
+                    
+                        <li class="question">Q. 다툼이 일어나면 어떻게 하나요?</li>
+                        <li class="answer">A. 분리된 공간에 둡니다.</li>
+                    
+                        <li class="question">Q. 다툼이 일어나면 어떻게 하나요?</li>
+                        <li class="answer">A. 분리된 공간에 둡니다.</li>
+                    </ul>
                 </div>
+
             </div>
-            <button id="counsel">상담하기</button>
+
+            <!--1대1 문의-->
+            <div class="personal">
+                <h3>1대1 문의</h3>
+                <p>
+                   온라인 상담에 대한 답변은 보통 1-2일 정도 시간이 소요되며,
+                   유치원 일정에 따라 조금 늦어질 수 있습니다.
+                </p>
+                <p style="margin-bottom: 30px;">
+                   최대한 빠른 시일 내에 정성껏 답변 드리도록 노력하겠습니다. 
+                </p>
+
+                <div class="personal-txt">
+                    <table>
+                        <tr>
+            
+                            <input type="text" class="input" id="qnaTitle" placeholder="제목">
+                        </tr>
+
+                        <tr>
+
+                            <textarea class="personal-area" id="" rows="7" placeholder="내용"></textarea>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <button id="counsel">상담하기</button>
+            </div>
+
+            
+
         </article>
     </section>
 

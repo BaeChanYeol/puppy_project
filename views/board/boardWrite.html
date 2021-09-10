@@ -7,112 +7,92 @@
     <title>글쓰기</title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
-        /*======= 자유게시판 - 글 등록 페이지 =======*/
-        .boardWrite h3{
-            padding-bottom: 150px;
-        } 
-
-        .boardWrite form {
-            text-align: left;
-            margin: 0 auto;
-            margin-bottom: 30px;
-            padding: 0 60px;
-            /* margin-left: 400px; */
-            width: 1000px;
+        .writetitle{
+            padding: 100px;
+            font-size: 30px;
+            color: #996633;
         }
-
-        .boardWrite .article{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            flex-direction: column;
-
-
+        .boardWrite{
+            text-align: left;
             margin-bottom: 100px;
         }
-
-        /* 등록, 목록 버튼*/
-        .boardWrite .article button{ 
-            display: block;
-            padding: 6px 12px;
-            
+        .wrap .boardWrite button{ 
+            display: inline-block;
+            padding: 6px 15px;
             font-size: 14px;
-            margin: 0 auto;
+            font-weight: 400;
+            border-radius: 3px;
+            background: #996633;
+            outline: 0;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
+        }.wrap .boardWrite button:hover { 
+            box-shadow: 0 9px #999;;
         }
-
-        .boardWrite .article .regBtn{
-            float: right;
+        .wrap .boardWrite .regBtn{
             margin-right: 5px;
-        }
-
-        .boardWrite .article .listBtn{
             float: right;
-            margin-right: 10px;
         }
-
-        .boardWrite .reply-input .form-control{
-            margin-top: 10px;
-            width: 200px;
-            height: 30px;
+        .wrap .boardWrite .listBtn{
+            margin-right: 5px;
+            float: right;
         }
-
+        .wrap .boardWrite .photoBtn {
+            margin-top:10px ;
+            padding: 8px 20px;
+        }
         
         .boardWrite .form-control{
-            width: 250px;
-            height: 25px;
+            width: 1140px;
+            height: 35px;
+            margin-top: 10px;
+            padding: 5px;
         }
-
-
+        .boardWrite .imgbox{
+            border: 1px #000 solid;
+            width: 1140px;
+            height: 120px;
+            margin-top: 10px ;
+        }
         .boardWrite .textArea {
-            width: 800px;
+            width: 1140px;
+            margin-top: 10px;
+            padding: 15px;
         }
-
         .boardWrite td.t-title {
-            width: 80px;
+            width: 150px;
+            height: 50px;
+            font-size: 15px;
         }
-
         .boardWrite td{
             padding: 7px;
         }
     </style>
 </head>
 <body>
-    <section class="boardWrite">
-        <div class="article">
-            
-                
-            <h3>글쓰기</h3>
-                
-            <form>
-                <table>
-                    
-                        <tr>
-                            <td class="t-title">아이디</td>
-                            <td><input class="form-control"></td>
-                        </tr>
-                        <tr>
-                            <td class="t-title">제목</td>
-                            <td><input class="form-control"></td>
-                        </tr>
-                        <tr>
-                            <td class="t-title">내용</td>
-                            <td>
-                            <textarea class="textArea" rows="7" style="margin-bottom: 10px;"></textarea>
-                            </td>                 
-                        </tr>
-                    
-                </table>
-
-                    
-                <button type="button" class="listBtn">목록</button>
-                <button type="button" class="regBtn">등록</button>
-            </form>
-
-        
-    
-</div>
-
+    <section>
+        <article class="main-container">
+            <div class="wrap">   
+                <h3 class="writetitle">글쓰기</h3>
+            </div>
+        </article>
+        <article class="main-container">
+            <div class="wrap">
+                <form class="boardWrite clearfix">
+                    <select class="form-control">
+                        <option>자유게시판</option>
+                        <option>뽐내기 게시판</option>
+                    </select>
+                    <input class="form-control" placeholder="제목을 입력하세요">
+                    <button type="button" class="photoBtn"> 사진첨부 </button>
+                    <div class="imgbox"></div>
+                    <textarea class="textArea" rows="15" style="margin-bottom: 10px;" placeholder="내용을 입력하세요"></textarea>                        
+                    <button type="button" class="listBtn">목록</button>
+                    <button type="button" class="regBtn">등록</button>
+                </form>
+            </div>
+        </article>
     </section>
 </body>
 </html>

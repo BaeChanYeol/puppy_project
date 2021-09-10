@@ -8,22 +8,47 @@
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .myInfoModify1{
+            width: 50%;
+            margin: 0 auto;
+        }
+         .myinfomodify-title {
             text-align: center;
+           
         }
-        .myInfoModify1-notice {
-            line-height: 3em;
+
+        .myinfomodify-title h2 {
+            font-size: 35px;
         }
-        .myInfoModify1-passwordOk {
-            margin-top: 2em;
+
+        .myinfomodify-logo {
+            margin: 20px 0;
         }
-        .myInfoModify1-password {
-            width: 25em;
-            height: 3em;
+
+        .myinfomodify-logo img {
+            width: 35px;
+            height: 35px;
         }
-        .myInfoModify1-ok {
-            width: 25em;
-            height: 2em;
-            margin-top: 0.3em;
+        .myInfoModify1-passwordOk{
+            margin: 20px auto;
+            width: 70%;
+            text-align: center;
+
+        }
+        
+        .myInfoModify1-password{
+            width: 400px;
+            height: 35px;
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        .myInfoModify1-ok{
+            margin-top: 10px;
+            width: 400px;
+            height: 35px;
+            background: #996633;
+            border: none;
+            color: white;
+            font-size: 16px;
         }
         
     </style>
@@ -31,15 +56,22 @@
 </head>
 <body>
     <!-- 내 정보 수정에서 비밀번호 확인페이지 -->
-    <section class="myInfoModify1">
-        <article class = "myInfoModify1-myInfo">
-            <h2>내 정보 수정</h2>
-            <div class="myInfoModify1-notice">
+    <section>
+        <article class ="myInfoModify1">
+            <div class="myinfomodify-title">
+                <h2>내 정보 수정</h2>
+                <div class="myinfomodify-logo">
+                    <img src="../img/simbol.png" alt="simbol">
+                </div>
                 <h4>회원님의 안전한 정보 보호를 위해 다시 한번 비밀번호를 입력해주세요.</h4>
             </div>
+           
+            
             <div class="myInfoModify1-passwordOk">
-                <input class="myInfoModify1-password" placeholder="비밀번호를 입력하세요."><br>
-                <button class="myInfoModify1-ok">확인</button>
+                <form action="" method="POST">
+                    <input class="myInfoModify1-password" placeholder="비밀번호를 입력하세요."><br>
+                    <button class="myInfoModify1-ok">확인</button>
+                </form>
             </div>
         </article>
     </section>
