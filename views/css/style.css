@@ -739,6 +739,26 @@ table, tr, td, th{
     float: right;
     margin-right: 45px;
     margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    background: #996633;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.boast-paging button {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    background: #996633;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 5px;
 }
 
 .boast-comment-btn{
@@ -763,7 +783,8 @@ table, tr, td, th{
 /*=========== 자유게시판 ==============*/
 
 .freeboard-title {
-    font-size: 22px;
+    font-size: 25px;
+    color: #996633;
 }
 
 .freeboard-sort {
@@ -779,8 +800,15 @@ table, tr, td, th{
     width: 100%;
     
 }
-.freeboard-table td, .freeboard-table th{
-    padding: 20px;
+
+.freeboard-table th {
+    background-color: #996633;
+    color: #fff;
+    padding: 15px;
+}
+
+.freeboard-table td{
+    padding: 20px 0;
 }
 
 .freeboard-paging {
@@ -790,11 +818,6 @@ table, tr, td, th{
 
 .freeboard-page {
     display: inline;
-}
-
-.freeboard-write-btn{
-    margin: 20px;
-    float: right;
 }
 .freeboard-search{
     margin-top: 50px;
@@ -808,10 +831,52 @@ table, tr, td, th{
     margin: auto 20px;
 }
 .freeboard-write-btn{
-    padding: 7px;
+    float: right;
+    margin: 20px 0;
+    padding: 6px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    background: #996633;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
 }
 .freeboard-btn{
-    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    background: #996633;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 5px;
+}
+.serch-btn {
+    padding: 4px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    background: #996633;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+.freenum {
+    width: 90px;
+}
+.freehit {
+    width: 120px;
+}
+.freeregdate {
+    width: 150px;
+}
+.freewrite {
+    width: 200px;
 }
 
 

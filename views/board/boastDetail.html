@@ -25,7 +25,7 @@
             height: 600px;
             position: absolute;
             top: 45%;
-            left: 40%;
+            left: 35%;
             margin: -250px 0 0 -250px;
             background: #fff;
             z-index: 2;
@@ -68,9 +68,10 @@
         .boast-text {
             font-size: 12px;
         }
-        .boast-text textarea {
+        .boast-text .text {
             margin-top: 10px;
             width: 385px;
+            height: 180px;
             border: none;
             border-bottom: solid 1px #ccc;
             padding: 5px 10px;
@@ -78,13 +79,13 @@
         
         .boast-content .likearea {
             width: 385px;
-            border-bottom: solid 1px #ccc;
-            height: 70px;
+            /* border-bottom: solid 1px #ccc; */
+            height: 40px;
             position: relative;
         }
         
         .boast-content .likearea img {
-            width: 30px;
+            width: 25px;
             margin: 10px 10px 0;
         }
         .boast-content .likearea P {
@@ -94,13 +95,34 @@
             position: absolute;
             top:10px;
             right:10px;
+            font-weight: bold;
         }
         .boast-comment {
             padding-top: 30px;
             width: 385px;
-            height: 240px;
+            height: 265px;
             border-bottom: solid 1px #ccc;
         }
+        .commentwrap {
+            height: 30px;
+        }
+
+        .boast-comment .commentwrap .boast-img {
+            width: 40px;
+            height: 30px;
+            float: left;
+        }
+        .boast-comment .commentwrap .boast-id {
+            float: left;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .boast-comment .commentwrap .boast-dat {
+            float: left;
+            padding: 5px;
+
+        }
+
         .boasr-commentadd button{ 
             display: inline-block;
             padding: 6px 15px;
@@ -112,8 +134,19 @@
             border: 0;
             color: #fff;
             cursor: pointer;
+            margin-top: 15px;
         }
 
+        .boasr-commentadd .boasr-comadd {
+            float: left;
+        }
+
+        .boasr-commentadd input {
+            width: 300px;
+            height: 30px;
+            padding: 3px;
+            margin: 15px 5px;
+        }
 
 
 
@@ -138,12 +171,10 @@
                     <p>태어난지 100일째 저희 집 리트리버</p>
                 </div>
                 <div class="boast-text">
-                    <textarea rows="10" readonly>우리 콩이 너무 너무 이쁘죠?</textarea>
+                    <div class="text"> <p>우리 콩이 너무 너무 이쁘죠?</p> </div>
                 </div>
                 <div class="likearea">
-
-                        <img src="../img/heart2.png" alt="">
-
+                    <img src="../img/heart2.png" alt="좋아요버튼">
                     <p>좋아요 <span>5</span>개</p>
                     <p class="bright">콩이아빠</p>
                     
@@ -151,17 +182,19 @@
             <!--댓글창-->
                 
                 <div class="boast-comment">
-                   <div>동이아빠</div>
-                   <div>너무 귀여워요~</div>
-
+                    <div class="commentwrap clearfix">
+                        <div class="boast-img"><img src="../img/insta-profile.jpg" alt="프로필 사진"></div>
+                        <div class="boast-id">동이아빠</div>
+                        <div class="boast-dat">너무 귀여워요~</div>
+                    </div>
                 </div>
                 <!--댓글달기-->
                 <!--댓글달기-->
-                <div class="boasr-commentadd">
-                    <div class="boasr-content4-1 boasr-content4-2" >
-                        <input type="text" name="ssn[]" size="14" class="input01" maxlength=20>
+                <div class="boasr-commentadd clearfix">
+                    <div class="boasr-comadd" >
+                        <input type="text" name="ssn"  placeholder="댓글을 남겨보세요" >
                     </div>
-                    <div class="boasr-content4-1 boasr-content4-3">
+                    <div class="boasr-comadd">
                         <button>게시</button>
                     </div>
                 </div>

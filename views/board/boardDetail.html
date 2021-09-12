@@ -8,97 +8,59 @@
     <link rel="stylesheet" href="../css/style.css">
     <style>
         /*======= 자유게시판 - 상세보기 페이지 =======*/
-        .boardDetail h3{
-            padding-bottom: 140px;
+        .writetitle{
+            padding: 100px;
+            font-size: 30px;
+            color: #996633;
         }
 
-        .boardDetail form {
-            text-align: left;
-            margin: 0 auto;
-            padding: 0 60px;
-            /* margin-left: 600px; */
-            width: 1000px;
-            margin-bottom: 30px;
+        .freetitle {
+            border-bottom: #996633 1px solid;
+            padding-bottom: 10px;
+        }
+        .freetitle h4 {
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        .freetitle p .hit {
+            padding-left: 20px;
+        }
+        .freecontent {
+            margin: 10px 0;
+            width: 1140px;
+            height: 350px;           
+            border: #ccc 1px solid;
+        }        
+        .freecontent .content {
+            padding: 8px;
         }
 
-        .boardDetail .article{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            flex-direction: column;
-
-            margin-bottom: 30px;
-        }
-
-        .boardDetail .article button{ /* 변경, 목록 버튼*/
-            display: block;
-            
-            /* margin-left: 50%; */
-            
-            padding: 6px 12px;
-            margin-bottom: 0;
+        .freeBtn{
+            margin-right: 5px;
+            display: inline-block;
+            padding: 6px 15px;
             font-size: 14px;
-            margin: 0 auto;
+            font-weight: 400;
+            border-radius: 3px;
+            background: #996633;
+            outline: 0;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
         }
-
-        .boardDetail .article .modBtn{
+        .btnright{
             float: right;
-            margin-right: 20px;
+            margin-right: 0px;
         }
-
-        .boardDetail .article .listBtn{
-            float: right;
-            margin-right: 10px;
-        }
-
-        .boardDetail .form-group{
-            margin-bottom: 15px;
-        }
-        .boardDetail .form-group label{
-            margin-right: 15px;
-        }
-
-        .boardDetail .reply-input{
-            width: 500px;
-        }
-
-        .boardDetail .reply-input .form-control{
-            margin-top: 10px;
-            width: 200px;
-            height: 30px;
-        }
-
-        
-        .boardDetail .form-control{
-            
-            /* background-color: rgb(223, 223, 223); */
-            width: 800px;
-            height: 25px;
-        }
-        .boardDetail .textArea{
-            width: 800px;
-
-        } 
-        .boardDetail .commentArea{ /*댓글 입력창*/
+   
+        .commentArea{ /*댓글 입력창*/
             width: 880px;
             height: 80px;
             border: none;
             /* margin-left: 52px; */
         }
-
- 
-        .reply-content img{
-            width: 45px;
-            height: 45px;
-        }
-
-        
-        .reply-content .input{
-            border: none;
-            padding-left: 10px;
-            width:440px;
-            height: 40px;
+        #replyList {
+            margin-top: 50px;
         }
 
         .reply-image{
@@ -108,53 +70,19 @@
         }
 
         /* 댓글 목록 */
-        .boardDetail .reply-group{  
+        .reply-group{  
             border-top: 1px solid #eee;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            width: 880px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 1140px;
             /* margin-left: -40px; */
             border-bottom: 1px solid #eee;
-            margin-bottom: 30px;
-        }
-
-        /* 댓글 입력창 */
-        .reply-content{ 
-            display: block;
-            width: 880px;
-            /* position: relative; */
-            /* margin-left: 50px; */
-            margin: 0 auto;
-            margin-top: 100px;
-            /* margin-left: 380px; */
-            text-align: center;
-        } 
-
-        .registCom { /*댓글 등록하기 버튼*/
-            display: block;
-            /* position: absolute; */
-            float: right;  
-            /* margin-left: 820px; */
-            margin-top: -15px;
-            padding: 6px 12px;
-            width: 90px;
-            font-size: 14px;   
-            
-        }
-
-        .reply-wrap{
-            width: 700px;
-            height: 50px;
-            margin-top: 100px;
-            /* margin-left: 450px; */
-            margin-bottom: 50px;
+            margin-bottom: 10px;
         }
 
         .reply-group .reply-left{
             float: left;
-            margin-left: 10px;
-            width: 110px;
-            
+            margin-left: 10px;            
         }
 
         .reply-group .reply-right{ /*댓글 수정, 삭제 버튼*/
@@ -166,130 +94,104 @@
         }
 
         .reply-group p {
-            /* float: left; */
-            display: inline-block;
-            margin-top: 25px;
-            margin-left: -232px;
-        } 
+            float: left;
+            margin-left: 30px;
 
-        .reply-content table{
-            border: 1px solid black;
-            border-collapse: collapse;
-            width: 800px;
-            margin-bottom: 15px;
-            /* margin-left: 30px; */
+        } 
+        .reply-content {
+            margin-bottom: 30px;
         }
-        .reply-content tr, .reply-content td{
-            border: 1px solid black;
-            border-collapse: collapse;
+        .commentArea {
+            float: left;
+            width: 1050px;
+            height: 100px;
+            border: 1px solid #996633;
+            padding: 10px;
         }
+        
+        .registCom { /*댓글 등록하기 버튼*/
+            width: 80px;
+            height: 100px;
+            margin-left: 10px;
+            display: block;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 3px;
+            background: #996633;
+            outline: 0;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
+            float: left;
+        }
+
+
     </style>
 </head>
 <body>
-    <section class="boardDetail">
-
-        <div class="article">
-            
-                
-                    <h3>상세보기</h3>
-                        
-                    <form>
-                            <div class="form-group">
-                                <label>작성일</label>
-                                <input class="form-control" readonly>
-                            </div>   
-                            <div class="form-group">
-                                <label>번호&nbsp;&nbsp;&nbsp;</label>
-                                <input class="form-control" readonly>
-                            </div>
-                            <div class="form-group">
-                                <label>작성자</label>
-                                <input class="form-control" readonly>
-                            </div>    
-                            <div class="form-group">
-                                <label>제목&nbsp;&nbsp;&nbsp;</label>
-                                <input class="form-control" readonly>
-                            </div>
-
-                            <div class="form-group">
-                                <label style="float: left;">내용&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                                <textarea class="textArea" rows="10" readonly></textarea>
-                            </div>
-
-                            
-                            <button type="button" class="modBtn">변경</button>
-                            <button type="button" class="listBtn">목록</button>
-                    </form>
-
-                
-            
-        
-
-
-            <div class="commentList">
-                    
-                <!-- <h3>댓글</h3> -->
-
-                <!--댓글 목록-->
-                <div id="replyList"> 
-                    
-                    <div class='reply-wrap' >
-
-
-                        <div class="reply-item" >
-                            
-                            
-                            <div class='reply-group'>
-
-                                <div class='reply-image'>
-                                    <img src='./images/profile.png'>
-                                </div>
-
-                                <strong class='reply-left'>honggildong</strong>
-                                <small class='reply-left'>2019/12/10</small>
-                                <p>여기는 댓글영역</p>
-                                <a href='#' class='reply-right'><span class='reply-delBtn'></span>삭제</a>
-                                <a href='#' class='reply-right'><span class='reply-modBtn'></span>수정</a>
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                    
+    <section>
+        <article class="main-container">
+            <div class="wrap">   
+                <h3 class="writetitle">자유게시판</h3>
+            </div>
+        </article>
+        <article class="main-contaier">
+            <div class="freetitle wrap">                                   
+                <h4 class="title">콩이를 만나서 너무 행복합니다.</h4>
+                <p>
+                    <span class="writer">콩이아빠</span><br>
+                    <span class="ragdate">2021.09.12. 17:45</span>
+                    <span class="hit">조회수: 20</span>
+                </p>
+            </div>
+            <div class="wrap">
+                <div class="freecontent">
+                    <p class="content"> 콩이를 입양하고 우울증도 많이 좋아지고 항상 콩이보는 낙으로 살고 있어요</p>
                 </div>
-
-
-
-
-
-
-                <!-- 댓글 입력창 -->   
-                <div class="reply-content">
-
-                    <table>
-                        <tr>
-                            <td>
-                                <input type="text" class="input" id="replyId" placeholder="이름">
-                            </td>
-                            <td>
-                                <input type="password" class="input" id="replyPw" placeholder="비밀번호">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <textarea class="commentArea" rows="3" id="reply"></textarea>
-                            </td>
-                        </tr>
-
-
-                    </table>
-
-                    <button type="button" class="registCom">등록하기</button>
-                    
+                <div class="freebtn">
+                    <button type="button" class="freeBtn">글쓰기</button>
+                    <button type="button" class="freeBtn">수정</button>
+                    <button type="button" class="freeBtn">삭제</button>
+                    <button type="button" class="freeBtn btnright">목록</button>
+                </div>
+                </div>
+        </article>
+        <article class="main-contaier">
+            <div class="commentList wrap">
+                <!--댓글 목록-->
+                <div id="replyList">                  
+                    <div class="reply-item" >             
+                        <div class='reply-group clearfix'>
+                            <div class='reply-image'>
+                                <img src='../img/hotel.png'>
+                            </div>
+                            <strong class='reply-left'>댕이천사</strong>
+                            <small class='reply-left'>2019/12/10</small>
+                            <p>공감합니다.</p>
+                            <a href='#' class='reply-right'><span class='reply-delBtn'></span>삭제</a>
+                            <a href='#' class='reply-right'><span class='reply-modBtn'></span>수정</a>
+                        </div>
+                        <div class='reply-group clearfix'>
+                            <div class='reply-image'>
+                                <img src='../img/grooming.png'>
+                            </div>
+                            <strong class='reply-left'>시츄엄마</strong>
+                            <small class='reply-left'>2019/12/10</small>
+                            <p>댕댕이들은 저희의 축복이죠</p>
+                            <a href='#' class='reply-right'><span class='reply-delBtn'></span>삭제</a>
+                            <a href='#' class='reply-right'><span class='reply-modBtn'></span>수정</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-        </div>
+        </article>
+        <article class="main-contaier">
+                <!-- 댓글 입력창 -->   
+                <div class="reply-content wrap clearfix">
+                    <textarea class="commentArea" id="reply"></textarea>
+                    <button type="button" class="registCom">등록하기</button>
+                </div>
+        </article>
 
     </section>
         
