@@ -15,7 +15,7 @@
 
         .QNA h2{
             text-align: center;
-            font-size: 38px;
+            font-size: 35px;
             margin-bottom: 100px;
         }
 
@@ -25,48 +25,8 @@
             font-size: 25px;
         }
 
-        .FAQ{
-            text-align: left;
-            width: 763px;
-        }
-
-        .qnaBoard .QNA {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 130vh;
-            flex-direction: column;
-            margin-bottom: 70px;
-        }
-
-        .FAQ .question{
-            font-size: 18px;
-            padding-bottom: 15px;
-        }
-
-        .FAQ .answer {
-            display: none;
-            font-size: 18px;
-            padding-bottom: 15px;
-        }
-
-        .personal{
-            clear: both;
-            padding-top: 50px;
-            height: 200px;
-            text-align: left;
-        }
-
-
-        .personal p {
-            font-size: 17px;
-            padding-bottom: 10px;
-        }
-
-        .personal-txt .personal-area, .personal-txt #qnaTitle {
-            display: flex;
-            flex-direction: row;
-            width: 763px;
+        .personal-txt .personal-area, #qnaTitle {
+            width: 1140px;
             padding: 10px;
         }
 
@@ -80,22 +40,23 @@
             margin-bottom: 50px;
         }
 
+
+
         
     </style>
 
 
 </head>
 <body>
-    <section class="qnaBoard">
-        <article class = "QNA">
+    <section>
+        <article class = "QNA main-container">
             
             <h2>Q&A</h2>
 
             <!--자주하는 질문-->
-            <div class="FAQ">
+            <div class="FAQ wrap">
                 <h3>자주하는 질문</h3>
                 <div class="list">
-
                     <ul>
                         <li class="question">Q. 다툼이 일어나면 어떻게 하나요?</li>
                         <li class="answer">A. 분리된 공간에 둡니다.</li>
@@ -111,7 +72,7 @@
             </div>
 
             <!--1대1 문의-->
-            <div class="personal">
+            <div class="personal wrap">
                 <h3>1대1 문의</h3>
                 <p>
                    온라인 상담에 대한 답변은 보통 1-2일 정도 시간이 소요되며,
@@ -121,19 +82,9 @@
                    최대한 빠른 시일 내에 정성껏 답변 드리도록 노력하겠습니다. 
                 </p>
 
-                <div class="personal-txt">
-                    <table>
-                        <tr>
-            
-                            <input type="text" class="input" id="qnaTitle" placeholder="제목">
-                        </tr>
-
-                        <tr>
-
-                            <textarea class="personal-area" id="" rows="7" placeholder="내용"></textarea>
-                        </tr>
-                    </table>
-
+                <div class="personal-txt">           
+                    <input type="text" class="input" id="qnaTitle" placeholder="제목">
+                    <textarea class="personal-area" id="" rows="7" placeholder="내용"></textarea>
                 </div>
 
                 <button id="counsel">상담하기</button>
