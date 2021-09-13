@@ -6,13 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <style>
         .orderPage-table {
             /*전체 테이블*/
+            width: 70%;
             margin: auto;
             margin-top: 3em;
             line-height: 1.5em;
+        }
+
+        .order-title {
+            text-align: center;
+            font-size: 23px;
+            position: relative;
         }
 
         .orderPage-name {
@@ -25,27 +32,32 @@
 
         .orderPage-productTitle {
             /*주문 상품*/
-            margin-left: 2.9em;
             padding: 0.5em;
-            text-align: left;
         }
 
-        .orderPage-photo {
-            /*상품사진*/
-            margin-left: 4.5em;
+        .orderPage-product1{
+            width: 30%;
         }
 
-        .orderPage-product {
+        #orderPage-product {
             /*상품 내용*/
             display: inline-block;
             vertical-align: middle;
             text-align: left;
+        }
+
+        .orderPage-product2{
+            width: 40em;
             padding-left: 2em;
+        }
+
+        .orderPage-product2-price{
+            text-align: right;
         }
 
         .orderPage-product h2 {
             /*주문상품의 총금액(19,000원)*/
-            width: 30em;
+            width: 10em;
             text-align: right;
             padding-right: 2em;
         }
@@ -53,23 +65,23 @@
         .orderPage-account {
             /*결제 금액*/
             padding: 0.5em;
-            text-align: left;
-            padding-left: 60px;
         }
 
         .orderPage-price {
             /*상품 금액*/
             display: inline-block;
+            padding-left: 5em;
         }
 
         .orderPage-price2 {
             /*배송비*/
             display: inline-block;
+            padding-left: 5em;
         }
 
         .orderPage-allaccount {
             /*총 결제금액*/
-            padding: 0.5em;
+            padding-left: 5em;
             display: inline-block;
         }
 
@@ -83,6 +95,7 @@
         .orderPage-finalButton {
             /*결제하기 버튼*/
             margin: 2em;
+            text-align: center;
         }
 
         .orderPage-finalButton1,
@@ -98,8 +111,10 @@
 
 <body>
     <section>
-        <article>
-            <h2>주문하기</h2>
+        <article class="order">
+            <div class="order-title">
+                <h2>주문하기</h2>
+            </div>
             <div class="orderPage">
                 <table class="orderPage-table">
                     <tr>
@@ -127,13 +142,13 @@
                             <div class="orderPage-productTitle">
                                 <h3 class="orderPage-productTitle">주문상품</h3>
                             </div>
-                            <div class="orderPage-product">
-                                <img class="orderPage-photo" src="images/pad.png">
+                            <div class="orderPage-product1" id="orderPage-product">
+                                <img class="orderPage-photo" src="../img/pad.png">
                             </div>
-                            <div class="orderPage-product">
+                            <div class="orderPage-product2" id="orderPage-product">
                                 <p>친환경 부드러운 순면 강아지 패드</p>
                                 <p>배송비 2,500원</p>
-                                <h2>19,000원</h2>
+                                <h2 class="orderPage-product2-price">19,000원</h2>
                             </div>
                         </td>
                     </tr>
@@ -159,7 +174,7 @@
 
                     </tr>
                     <tr>
-                        <td>
+                        <td class="orderPage-payButtonAll">
                             <button class="orderPage-payButton">신용카드</button>
                             <button class="orderPage-payButton">계좌이체</button>
                             <button class="orderPage-payButton">휴대폰결제</button>
