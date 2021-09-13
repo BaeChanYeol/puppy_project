@@ -73,7 +73,7 @@ table, tr, td, th{
 
 /*======= 예약안내/이용안내 페이지 =======*/
 .title {
-    padding-top: 30px;
+    padding-top: 120px;
     line-height: 40px;
 }
 
@@ -524,12 +524,6 @@ table, tr, td, th{
 /*======= QnA 페이지 =======*/
 
 
-.FAQ h3{
-    padding-top: 20px;
-    padding-bottom: 30px;
-    font-size: 25px;
-}
-
 
 .FAQ{
     text-align: left;
@@ -542,81 +536,120 @@ table, tr, td, th{
 
 .FAQ .question{
     font-size: 18px;
-    padding-bottom: 15px;
+    height: 50px;
+    border-bottom: #996633 1px solid;
+    padding: 14px 5px;
 }
 
 .FAQ .answer {
     display: none;
     font-size: 18px;
-    padding-bottom: 15px;
+    height: 50px;
+    padding: 14px 20px;
 }
 
 .personal{
-   
-    margin: auto;
     padding-top: 50px;
-    height: 200px;
     text-align: left;
-
 }
 
-
-.personal h3{
-    font-size: 25px;
-    padding-bottom: 30px;
-}
 .personal p {
+
     font-size: 17px;
     padding-bottom: 10px;
     padding-left: 20px;
 }
 
 
- #counsel{
-    padding: 5px;
-    /* margin-left: 45%; */
-    /* position: absolute;
-    right: 780px;
-    bottom: 450px; */
-    margin: auto;
-    display: block;
-    margin-bottom: 30px;
-    /* position: relative;
-    margin-left: 600px; */
-
-}
-
-
 /*======= 공동구매 - 강아지용품 =======*/
 
+.product {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
 .item{
-    float:left;
-    width: 25%;
-    padding: 5px;
-    
+    display: inline-block; 
+    width: 250px;
+    margin: 15px;  
 }
 
-.item-list .title{
-    font-size: 22px;
+.item .align {
+    text-align: left;
 }
-
-.item-row{
-    margin: 0 auto;
-    width: 1000px;
-    height: 300px;
+.item .category {
+    color:#996633;
+    font-size: 15px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.item .p-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.item .p-price {
+    font-weight: 800;
+    font-size: 15px;
+}
+.item .p-price .cost {
+    font-weight: 500;
+    font-size: 13px;
+    padding-left: 10px;
+    color: grey;
+    text-decoration:line-through;
+}
+.item a {
+    color:#000;
+}
+.item a:hover .p-title {
+    color:#996633;
 }
 
 .item img{ 
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     padding-bottom: 15px;
 }
-
 .search{
     float: right;
-    padding-right: 27%;
     padding-bottom: 30px;
+}
+.sidemenu {
+    position: fixed;
+    top: 300px;
+    left:200px;
+    z-index: 10;
+}
 
+.sidemenu ul li a{
+    display: block;
+    color: #fff;
+    background: #996633;
+    width: 120px;
+    height: 50px;
+    margin-bottom: 2px;
+    padding: 15px 10px;
+}
+.sidemenu ul li .page{
+    color: #000;
+    background: #fff;
+    font-weight: bold;
+    width: 120px;
+    height: 50px;
+    margin-bottom: 2px;
+    padding: 15px 10px;
+}
+
+.sidemenu ul li a:hover{
+    color: #000;
+    background: #fff;
+    font-weight: bold;
+    width: 120px;
+    height: 50px;
+    margin-bottom: 2px;
+    padding: 15px 10px;
 }
 
 
