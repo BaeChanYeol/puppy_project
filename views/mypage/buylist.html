@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>구매내역</title>
     <link rel="stylesheet" href="../css/style.css">
-
     <style>
-         .buylist-wrap {
+        .buylist-wrap {
             width: 80%;
             margin: 150px auto 0;
             border-bottom: 1px gray solid;
@@ -16,145 +15,158 @@
             box-sizing: border-box;
         }
 
-        
         .buylist-title {
             text-align: center;
-            font-size: 25px;
-        }
-
-        .buylist-bucket img {
-            float: right;
-            width: 50px;
-            margin-right: 60px;
-           
-        }
-
-      
-
-        .buylist-list {
             display: inline-block;
-            margin-left: 100px;
+            margin-left: 50px;
+          
         }
 
-        .buylist-list img {
-            width: 100px;
+        .buylist-title h2 {
+            font-size: 32px;
+            float: left;
+            height: 60px;
+            line-height: 70px;
+            padding-right: 5px;
+
         }
 
-        .buylist-list1 {
-            margin-left: 100px;
+        .buylist-title img {
+            width: 50px;
+            text-align: center;
+            float: left;
+            display: block;
+            height: 60px;
+
+        }
+
+        .buylist-wrap1 {
+            width: 80%;
+            margin:20px auto 0 ;
+            border-bottom: 1px gray solid;
+            padding-bottom: 20px;
+            box-sizing: border-box;
+        }
+       
+      .buylist-main1 h2 {
+          font-size: 17px;
+          line-height: 30px;
+          margin-left: 50px;
+      }
+
+        .buylist-list1 h5 {
+            font-size: 17px;
+            line-height: 30px;
+       
         }
 
         .buylist-list1 h6 {
-            font-size: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            font-size: 17px;
+            line-height: 30px;
+           
         }
 
-        .buylist-list1 h5 {
-            font-size: 15px;
-            padding-bottom: 0px;
+     
+       
+
+        .buylist-main2 img {
+            margin: 20px auto 0;
+            width: 200px;
+            float: left;
+        }
+
+        .buylist-main2 h2 {
+            font-size: 17px;
+            float: left;
+            margin-top: 110px;
+            padding: 0 80px;
+        }
+
+        .buylist-button {
+            float: right;
         }
 
         .buylist-btn{
             width: 120px;
-            
+            margin-top: 180px;
+            height: 60px;
         }
-
-        .buylist-button {
-            line-height: 200px;
-            float: right;
+        .buylist1-1{
+            width: 170px;
+            float: left;
+            padding-left: 40px;
+            text-align: center;
         }
-       
+        .buylist-list1 h6{
+            float: left;
+            margin-left: 300px;
+        }
     </style>
 </head>
 <body>
     <section>
         <article class="buylist-wrap">
             <div class="buylist-title">
-                <h2>구매내역</h2>
-            </div>
-
-            <div class="buylist-bucket ">
-                <a href="">
-                    <img src="../img/mp1.jpg" alt="장바구니">
-                </a>
+                
+                <h2>
+                    구매내역
+                </h2>
+                <img src="../img/mp1.jpg" alt="">
+               
             </div>
         </article>
 
-        <article class="buylist-wrap">
-            
-            <div class="buylist-border" style="border-bottom: 1px gray solid;">
-                <div class="buylist-list1">
-                    <h5 style="float: left;">2021/08/30</h5>
-                    <h5 style="float: left;">상품정보</h5>
 
-                    <h6 style="float: left; clear: both;">배송완료</h6>
-
+        <article class="buylist-wrap1 clearfix">
+            <div class="buylist-list1 clearfix">
+                <div class="buylist1-1 " >
+                    <h5>2021/08/30</h5>
+                    <h5>배송완료</h5>
                 </div>
-                <div class="buylist-list">
-                    <a href="">
-                    <img src="../img/buy1.jpg" alt="껌">
-                </a>
-                </div>
-                <div class="buylist-list">
-                    <p>유기농 개껌 치석제거 3SET</p>
-                    <p>수량 5개</p>
-                    <p>27,150원</p>
-                </div>
-
-                <div class="buylist-button clearfix">
-                    <button class="buylist-btn">반품신청</button>
-                    <button class="buylist-btn">교환신청</button>
-                    <button class="buylist-btn">구매확정</button>
-                    <button class="buylist-btn">배송조회</button>
-                </div>
-
+                <h6>상품정보</h6>
+            </div>
+            <div class="buylist-main2">
+                <img src="../img/basket1.jpg" alt="껌">
+                <h2>유기농 개껌 치석제거 3SET <br>수량 5개 <br>27,150원</h2>
+            </div>
+            <div class="buylist-button">
+                <button class="buylist-btn">반품신청</button>
+                <button class="buylist-btn">교환신청</button>
+                <button class="buylist-btn">구매확정</button>
+                <button class="buylist-btn">배송조회</button>
             </div>
 
-            <div class="buylist-border" style="border-bottom: 1px gray solid;">
-                <div class="buylist-list1">
-                    <h5>2021/08/17</h5>
-                    <h6>구매확정</h6>
-                </div>
-                <div class="buylist-list">
-                    <a href="">
-                    <img src="../img/buy2.jpg" alt="산소발생기">
-                </a>
-                </div>
-                <div class="buylist-list">
-                    <p>강아지 의료용 산소발생기</p>
-                    <p>수량 1개</p>
-                    <p>200,000원</p>
-                </div>
-
-                <div class="buylist-button">
-                    <button class="buylist-btn">판매자문의</button>
-                    <button class="buylist-btn">장바구니 담기</button>
-                    <button class="buylist-btn">리뷰작성</button>
-                </div>
-                </div>
-            
-                <div class="buylist-border" style="border-bottom: 1px gray solid;">
-                <div class="buylist-list1">
-                    <h5>2021/06/23</h5>
-                    <h6>반품완료</h6>
-                </div>
-                <div class="buylist-list">
-                    <a href="">
-                    <img src="../img/buy3.jpg" alt="칫솔">
-                </a>
-                </div>
-                <div class="buylist-list">
-                    <p>극세사 칫솔</p>
-                    <p>수량 3개</p>
-                    <p>14,700원</p>
-                </div>
-                <div class="buylist-button">
-                    <button class="buylist-btn">결제/환불 내역</button>
-                    <button class="buylist-btn">판매자 문의</button>
-                </div>
+        </article>
+        <article class="buylist-wrap1 clearfix">
+            <div class="buylist-main1">
+                <h2>2021/08/17</h2>
+                <h2>구매확정</h2>
             </div>
-           
+            <div class="buylist-main2">
+                <img src="../img/basket2.jpg" alt="산소발생기">
+                <h2>강아지 의료용 산소발생기 <br>수량 1개 <br>200,000원</h2>
+            </div>
+            <div class="buylist-button">
+                <button class="buylist-btn">판매자 문의</button>
+                <button class="buylist-btn">장바구니 담기</button>
+                <button class="buylist-btn">리뷰작성</button>
+            </div>
+
+        </article>
+        <article class="buylist-wrap1 clearfix">
+            <div class="buylist-main1">
+                <h2>2021/06/23</h2>
+                <h2>반품완료</h2>
+            </div>
+            <div class="buylist-main2">
+                <img src="../img/basket3.jpg" alt="칫솔">
+                <h2>극세사 칫솔 <br>수량 3개 <br>14,700원</h2>
+            </div>
+            <div class="buylist-button">
+                <button class="buylist-btn">결제/환불 내역</button>
+                <button class="buylist-btn">판매자 문의</button>
+            </div>
+
         </article>
 
     </section>
