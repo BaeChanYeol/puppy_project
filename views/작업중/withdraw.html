@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원탈퇴</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .withdraw{
+            width: 60%;
+            margin: 0 auto 70px;
+        }
+        .withdraw-title {
+            text-align: center;
+           
+        }
+
+        .withdraw-title h2 {
+            font-size: 35px;
+        }
+
+        .withdraw-logo {
+            margin: 20px 0;
+        }
+
+        .withdraw-logo img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .withdrawform {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .withdrawform h5 {
+            padding: 20px 5px 20px;
+            font-size: 16px; 
+        }
+        .withdrawform-wrap {
+            width: 50%;
+            height: 30px;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .withdrawform-wrap select {
+            width: 100%;
+            height: 30px;
+            text-align: left;
+        }
+
+        .withdrawform-wrap-left {
+            width: 50%;
+            float: left;
+            padding: 0 0 0 10px;
+        }
+
+        .withdrawform-wrap-right {
+            width: 50%;
+            float: left;
+            padding: 0 0 0 10px;
+        }
+
+        .withdrawform input[type="text"] {
+            width: 100%;
+            height: 30px;
+            padding-left: 5px;
+        }
+
+      
+        .withdrawBtn1, .withdrawBtn2 {
+            background: #996633;
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .withdraw-bottom{
+            margin-top: 30px;
+            box-sizing: border-box;
+            width: 100%;
+            
+        }
+        /* .withdraw-bottom div{
+            width: 50%;
+            float: left;
+               
+        } */
+        .withdraw-bottom1{
+            padding: 0 5px 0 0;
+        }
+        
+        .withdraw-bottom .withdrawBtn1, .withdraw-bottom .withdrawBtn2{
+            width: 100%;
+            height: 40px;
+        }
+
+        .withdrawform .reason-list label{
+            font-size: 14.5px;
+        }
+
+        .withdrawform .reason-list label input[type="radio"]{
+            margin-bottom: 10px;
+            
+        }
+    </style>
+</head>
+
+
+<body>
+    <section>
+        <section>
+            <article class="withdraw">
+                <div class="withdraw-title">
+                    <h2>회원 탈퇴</h2>
+                    <div class="withdraw-logo">
+                        <img src="../img/simbol.png" alt="simbol">
+                    </div>
+                    <!-- <h4>회원 탈퇴 안내사항</h4> -->
+                    <!-- <h5>아이디는 생년월일, 이름, 이메일을 통해 찾을 수 있습니다.</h5> -->
+                </div>
+    
+                <div class="withdrawform">
+                    <form action="" method="POST">
+                        
+                        <h5><label for="pw">비밀번호</label></h5>
+                        <input type="text" name="name" id="" placeholder="비밀번호 입력해주세요.">
+                        <span></span>
+
+                        <h5><label for="reasons">탈퇴사유</label></h5>
+                        <div class="reason-list">
+                            <label><input type="radio" name="reason" value="reason1">&nbsp;다른 계정이름으로 사용하기 위해서</label><br>
+                            <label><input type="radio" name="reason" value="reason2">&nbsp;사용빈도가 낮고 개인정보 유출이 우려돼서</label><br>
+                            <label><input type="radio" name="reason" value="reason3">&nbsp;사이트 이용 시 장애가 많아서</label><br>
+                            <label><input type="radio" name="reason" value="reason4">&nbsp;서비스의 질에 대한 불만이 있어서</label><br>
+                            <label><input type="radio" name="reason" value="reason5">&nbsp;사이트 이용 시 고객응대가 나빠서</label><br>
+                            <label><input type="radio" name="reason" value="reason6">&nbsp;기타</label>
+                        </div>
+                        <span></span>
+                    
+                    
+                        <div class="withdraw-bottom clearfix">
+                            <div class="withdraw-bottom1">
+                                <button type="submit" class="withdrawBtn1">회원탈퇴</button>
+                            </div>
+                        </div>
+                        
+    
+                    </form>
+                </div>
+            </article>
+        </section>
+    </section>
+
+
+
+    
+</body>
+</html>
