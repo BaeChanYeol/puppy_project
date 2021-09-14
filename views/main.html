@@ -30,7 +30,6 @@
             /* 사이즈가 변해도 비율을 유지 */
         }
 
-
         ul,
         ol,
         dl,
@@ -38,7 +37,6 @@
             /*리스트 스타일은 사용할 일이 많지 않아요.*/
             list-style: none;
         }
-
         
         .clearfix::after {
             content: '';
@@ -48,7 +46,7 @@
         a {text-decoration: none;}
 
         /* 해더 */
-        .header { position:fixed; top:0; width:100%; background: rgba(255, 255, 255 ,0.8); border-bottom:1px solid #c6c6c6; box-shadow:0px 3px 7px rgba(0,0,0,0.1); z-index:99999; }
+        .header { position:fixed; height: 290px; top:0; width:100%; background: rgba(255, 255, 255 ,0.8); border-bottom:1px solid #c6c6c6; box-shadow:0px 3px 7px rgba(0,0,0,0.1); z-index:99999; }
         .header_top { height:50px; color:#996633; font-size:12px; font-weight:600; line-height:30px; }
         .header_top a { color:#996633; }
         .header_top a:hover { color:#000; }
@@ -59,7 +57,7 @@
         .header_top_area .left { position:absolute; left:0; top: 10px;}
         .header_top_area .left a { display: inline-block; width: 25px; margin-right: 3px;}
 
-        .logo { width: 20%; margin:0 auto; padding:20px 0 40px; text-align:center; }
+        .logo{width: 350px; margin:0 auto; padding:20px 0 40px; text-align:center; }
         .menu_area {  position:relative; width:1080px; margin: 0 auto; }
         .menu_area .menu { display:table; margin:0 auto; }
         .menu .menu-li { float:left; }
@@ -67,7 +65,7 @@
         .menu .menu-li .menu-li-a:hover { padding-bottom:10px; color: #996633;  border-bottom: 3px solid #996633;}
 
         .second{position:absolute; top:90%;  display:none; z-index: 10000;}
-        .menu li:hover .second {display:block; background-color:rgba(255,255,255,0.9);}
+        .menu li:hover .second {display:block; background-color:rgba(255, 255, 255, 0.9);}
 
         .menu { display:inline-block; margin-top:10px; vertical-align:top; }
         .menu .second a { display:block;  font-size:14px; color:#555; font-weight:600; line-height:27px; width: 100px; height: 40px; margin: 5px 20px;}
@@ -81,7 +79,6 @@
         }
         .wrap {
             width: 1140px;
-            height: auto;
             margin: 0 auto;
         }
         .main-container {
@@ -94,7 +91,6 @@
         }
 
         #main-menu {
-            width: 70%;
             margin: 100px auto 150px;
             text-align: center;
         }
@@ -104,7 +100,7 @@
         #main-menu li {
             display: inline-block;
             width: 145px;
-            margin: 30px;
+            margin: 20px;
         }
 
         #main-menu li a{
@@ -131,7 +127,7 @@
         }
         #main-products li {
             display: inline-block;
-            margin: 0 60px 50px 60px;
+            margin: 0 40px 50px 40px;
         }
         #main-products li a {
             color: #000;
@@ -156,7 +152,6 @@
             color: #636363;
         }
         #main-notice {
-            width: 70%;
             margin: 100px auto;
             text-align: center;
         }
@@ -176,7 +171,7 @@
         #main-notice li {
             display: inline-block;
             width: 350px;
-            margin: 0 20px 20px;
+            margin: 0 10px 20px;
         }
         #main-notice li p {
             display: block;
@@ -244,7 +239,7 @@
 <body>
     <!-- 헤더 영역-->
     <header>
-        <div class="header .clearfix">
+        <div class="header clearfix">
             <div class="header_top">
                 <div class="header_top_area">
                     <div class="right">
@@ -253,10 +248,10 @@
                         <a href="/sitemap" style="font-weight: normal;">사이트맵</a>
                     </div>
                     <div class="left">
-                        <a href="/" ><img src="./img/simbol.png" alt="댕댕이 유치원"></a>
-                        <a href="/" ><img src="./img/instagram.png" alt="댕댕이 유치원"></a>
-                        <a href="/" ><img src="./img/blog.png" alt="댕댕이 유치원"></a>
-                        <a href="/" ><img src="./img/youtube.png" alt="댕댕이 유치원"></a>
+                        <a href="/" class="move"><img src="./img/simbol.png" alt="댕댕이 유치원"></a>
+                        <a href="/" class="move"><img src="./img/facebook.png" alt="페이스북"></a>
+                        <a href="/" class="move"><img src="./img/insta.png" alt="인스타"></a>
+                        <a href="/" class="move"><img src="./img/tube.png" alt="유튜브"></a>
                     </div>
                 </div>
             </div>
@@ -333,7 +328,7 @@
             </div>
         </article>
         <article class="main-container">
-            <div id="main-menu">
+            <div id="main-menu" class="wrap">
                 <h2 class="main-h2">Best World For My Dog</h2>
                 <ul class="clearfix">
                     <li>
@@ -383,34 +378,36 @@
         </article>
         <article class="main-container">
             <div id="main-products">
-                <h2 class="main-h2">Best Products</h2>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="./img/best1.PNG" alt="유기농 개껌">
-                            <h4 class="align p-title">푸르미 강아지 화장실 그물망<br>애견 배변판</h4>
-                            <p class="align p-price">7,400원</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/best2.PNG" alt="강아지 방한신발">
-                            <h4 class="align p-title">푸르미 강아지 울타리<br>애견 매직펜스 소형12P</h4>
-                            <p class="align p-price">14,500원</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/best3.PNG" alt="개빗">
-                            <h4 class="align p-title">푸리미 이동장 강아지 <br>켄넬 케이지 캐리어</h4>
-                            <p class="align p-price">15,600원</p>
-                        </a>
-                    </li>
-                </ul>
+                <div class="wrap">
+                    <h2 class="main-h2">Best Products</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./img/best1.PNG" alt="유기농 개껌">
+                                <h4 class="align p-title">푸르미 강아지 화장실 그물망<br>애견 배변판</h4>
+                                <p class="align p-price">7,400원</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/best2.PNG" alt="강아지 방한신발">
+                                <h4 class="align p-title">푸르미 강아지 울타리<br>애견 매직펜스 소형12P</h4>
+                                <p class="align p-price">14,500원</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/best3.PNG" alt="개빗">
+                                <h4 class="align p-title">푸리미 이동장 강아지 <br>켄넬 케이지 캐리어</h4>
+                                <p class="align p-price">15,600원</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </article>
         <article class="main-container">
-            <div id="main-notice">
+            <div id="main-notice" class="wrap">
                 <div>
                     <h2 class="main-h2">안심하고 믿고 맡길 수 있습니다.</h2>
                     <p class="no-p">반려견과 보호자를 위한 안전하고 편리한 맞춤형 서비스와<br>
@@ -517,7 +514,9 @@
    <script>
 
     const $logo = document.querySelector('.logo');
-    
+    const $header = document.querySelector('.header');
+    // const $move = document.querySelector('.header_top_area>.left>a')
+
 
     var prevScrollTop = 0;
     var nowScrollTop = 0;
@@ -530,10 +529,13 @@
     nowScrollTop = $(this).scrollTop();
     if(wheelDelta() == 'down'){
         $logo.style.display ='none';
-
+        $header.style.height ='102px';
+        $('.move').css('width','30px');
     }
     if(nowScrollTop == 0){
         $logo.style.display ='block';
+        $header.style.height ='290px';
+        $('.move').css('width','25px');
     }
     prevScrollTop = nowScrollTop;
     });
